@@ -1,0 +1,66 @@
+.App{
+    width: 100%;
+    height: 100vh;
+}
+
+.navBar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid black;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+.Posts{
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.PostsShow{
+    display: block;
+}
+
+button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5vmin;
+    height: 3vmin;
+    background-color: #ddd;
+}
+
+@media screen and (min-width: 768px) {
+    .App{
+        display: flex;
+    }
+    .navBar{
+        position: relative;
+        flex: 3 1 0;
+        max-width: 80px;
+        height: 100%;
+        border-top: 0;
+        border-right: 1px solid black;
+    }
+    .main{
+        width: auto;
+        flex: 8 1 0;
+    }
+}
+
+@media screen and (min-width: 1264px) {
+    .navBar{
+        max-width: 254px;
+    }
+}
+
+
+
+
+
